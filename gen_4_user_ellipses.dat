@@ -1,13 +1,13 @@
 //==============================================================================
 //Gereral Options & Fracture Network Parameters:  
 
-stopCondition: 1
+stopCondition: 0
     /* 0: stop once nPoly fractures are accepted (Defined below)
        1: stop once all family's p32 values are equal or greater than the families
                    target p32 values (defined in stochastic family sections)
     */             
 
-nPoly: 23196
+nPoly: 50
      /* Used when stopCondition = 0
            Total number of fractures you would like to have 
             in the domain you defined. The program will complete 
