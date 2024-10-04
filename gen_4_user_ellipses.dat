@@ -1,7 +1,7 @@
 //==============================================================================
 //Gereral Options & Fracture Network Parameters:  
 
-stopCondition: 0
+stopCondition: 1
     /* 0: stop once nPoly fractures are accepted (Defined below)
        1: stop once all family's p32 values are equal or greater than the families
                    target p32 values (defined in stochastic family sections)
@@ -51,7 +51,7 @@ regions:
 
 orientationOption: 0
 
-h: 1
+h: 2
   /* Minimum fracture length scale(meters)
     Any fracture with a feature, such as and intersection, of less than h will be rejected. */
 
@@ -225,10 +225,10 @@ eAngleOption: 0     /* All angles for ellipses:
                        0 - radians (Must use numerical value for PI)
                        1 - degrees  */
                         
-etheta: {6,3} /*Ellipse fracture orientation.
+etheta: {5,2} /*Ellipse fracture orientation.
                      The angle the normal vector makes with the z-axis */
 
-ephi: {2.38,3.14}   /* Ellipse fracture orientation.
+ephi: {2.38,1.45}   /* Ellipse fracture orientation.
                     The angle the projection of the normal onto the x-y plane
                     makes with the x-axis */
 
