@@ -72,7 +72,7 @@ tripleIntersections: 0
 /* Options:     0: Off
                 1: On    */
 
-/* multipleClusters: 0 */
+/* multipleClusters: 1 */
 
 
 printRejectReasons: 1
@@ -99,7 +99,7 @@ domainSizeIncrease: {20,20,20}
           //the domain by adding .5 to the +x, and subbtracting .5 to the -x, etc
 
 
-keepOnlyLargestCluster: 1
+keepOnlyLargestCluster: 0
     /* 0 = Keep any clusters which connects the specified 
            boundary faces in boundaryFaces option below
        
@@ -107,7 +107,7 @@ keepOnlyLargestCluster: 1
            the specified boundary faces in boundaryFaces option below
     */
 
-ignoreBoundaryFaces: 0  
+ignoreBoundaryFaces: 1  
 /*
      0 = use boundaryFaces option below 
 
@@ -130,7 +130,7 @@ boundaryFaces: {1,1,0,0,0,0}
 */
                           
 
-rejectsPerFracture: 10  /*If fracture is rejected, it will be re-translated to a new
+rejectsPerFracture: 1  /*If fracture is rejected, it will be re-translated to a new
                          position this number of times. 
                          
                          This helps hit distribution targets for stochastic families 
