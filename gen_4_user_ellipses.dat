@@ -51,7 +51,7 @@ regions:
 
 orientationOption: 0
 
-h: 2
+h: 1
   /* Minimum fracture length scale(meters)
     Any fracture with a feature, such as and intersection, of less than h will be rejected. */
 
@@ -82,7 +82,7 @@ printRejectReasons: 1
         1: print all rejection reasons to screen
 */
 
-visualizationMode: 1
+visualizationMode: 0
 /* Options: 0 or 1 
    Used during meshing: 
    0: creates a fine mesh, according to h parameter;
@@ -136,7 +136,7 @@ rejectsPerFracture: 10  /*If fracture is rejected, it will be re-translated to a
                          This helps hit distribution targets for stochastic families 
                          (Set to 1 to ignore this feature)    */
 
- keepIsolatedFractures: 1 
+ keepIsolatedFractures: 0 
 /*  0 - Remove any isolated fracture (not clusters)
     1 - Keep all fractures in the domain
 */
