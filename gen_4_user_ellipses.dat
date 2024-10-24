@@ -1,13 +1,13 @@
 //==============================================================================
 //Gereral Options & Fracture Network Parameters:  
 
-stopCondition: 0
+stopCondition: 1
     /* 0: stop once nPoly fractures are accepted (Defined below)
        1: stop once all family's p32 values are equal or greater than the families
                    target p32 values (defined in stochastic family sections)
     */             
 
-nPoly: 200
+nPoly: 150
      /* Used when stopCondition = 0
            Total number of fractures you would like to have 
             in the domain you defined. The program will complete 
@@ -136,7 +136,7 @@ rejectsPerFracture: 10  /*If fracture is rejected, it will be re-translated to a
                          This helps hit distribution targets for stochastic families 
                          (Set to 1 to ignore this feature)    */
 
- keepIsolatedFractures: 0 
+ keepIsolatedFractures: 1 
 /*  0 - Remove any isolated fracture (not clusters)
     1 - Keep all fractures in the domain
 */
@@ -202,7 +202,7 @@ ebetaDistribution: {1,1}   /* Beta is the rotation around the polygon's normal
                     1 - constant angle (specefied below by "ebeta")    */                
     
     
-e_p32Targets: {0.6,0.6} 
+e_p32Targets: {0.1,0.1} 
 /* Elliptical families target fracture intensity per family.
 When using stopCondition = 1 (defined at the top of the input file), families will 
 be inserted untill the families desired fracture intensity has been reached. 
@@ -225,7 +225,7 @@ eAngleOption: 0     /* All angles for ellipses:
                        0 - radians (Must use numerical value for PI)
                        1 - degrees  */
                         
-etheta: {5,2} /*Ellipse fracture orientation.
+etheta: {0.5,0.2} /*Ellipse fracture orientation.
                      The angle the normal vector makes with the z-axis */
 
 ephi: {2.38,1.45}   /* Ellipse fracture orientation.
@@ -235,7 +235,7 @@ ephi: {2.38,1.45}   /* Ellipse fracture orientation.
 ebeta: {0, 0}   /* rotation around the normal vector */
 
 
-ekappa: {1,1}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
+ekappa: {50,50}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
                         similar (less diverging) are the elliptical familiy's
                         normal vectors */                
 
