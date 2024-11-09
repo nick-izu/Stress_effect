@@ -235,7 +235,7 @@ ephi: {2.38,1.45}   /* Ellipse fracture orientation.
 ebeta: {0, 0}   /* rotation around the normal vector */
 
 
-ekappa: {50,50}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
+ekappa: {1,1}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
                         similar (less diverging) are the elliptical familiy's
                         normal vectors */                
 
